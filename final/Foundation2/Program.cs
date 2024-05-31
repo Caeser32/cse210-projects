@@ -5,12 +5,12 @@ class Program
     static void Main()
     {
 
-        Address address1 = new Address("123 Elm St", "Springfield", "IL", "USA");
-        Address address2 = new Address("456 Oak St", "London", "London", "UK");
+        Address address1 = new Address("16 Dagbreek St", "Dawn Park", "Gauteng", "SA");
+        Address address2 = new Address("4 Oak St", "Sommerset west", "Western Cape", "SA");
 
 
-        Customer customer1 = new Customer("John Doe", address1);
-        Customer customer2 = new Customer("Jane Smith", address2);
+        Customer customer1 = new Customer("Tumisang Msiza", address1);
+        Customer customer2 = new Customer("Langelihle Ndebele", address2);
 
         Product product1 = new Product("Laptop", "P001", 999.99m, 1);
         Product product2 = new Product("Mouse", "P002", 49.99m, 2);
@@ -26,7 +26,7 @@ class Program
         order2.AddProduct(product3);
         order2.AddProduct(product4);
 
-
+        // Display order details
         Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
         Console.WriteLine($"Total Cost: ${order1.GetTotalCost()}");
